@@ -1,0 +1,141 @@
+/* 1.0. 	Global
+------------------------------------*/
+
+html
+{
+	height: 100%;
+}
+
+html, *
+{
+	font-weight: @font-weight-normal;
+	.primary-font();
+
+	&.mobile
+	{
+		-webkit-text-size-adjust: none;
+	}
+}
+
+::selection
+{
+	background:  @dark-blue;
+	color:       white;
+	text-shadow: none;
+}
+
+::-webkit-selection
+{
+	background:  @dark-blue;
+	color:       white;
+	text-shadow: none;
+}
+
+::-moz-selection
+{
+	background:  @dark-blue;
+	color:       white;
+	text-shadow: none;
+}
+
+textarea:focus,
+input:focus
+{
+    outline: 0;
+}
+
+*:focus
+{
+    outline: 0;
+}
+
+body
+{
+	font-size:   18px;
+	line-height: 1.5;
+	color:       @dark;
+	background:  #ececec;
+	margin:      0;
+	overflow-x:  hidden;
+	font-weight: @font-weight-normal;
+	height:      100%;
+	.primary-font();
+
+	strong
+	{
+		font-weight: 800;
+	}
+
+	a,
+	button
+	{
+		.transition(0.2s, ease-out);
+	}
+}
+
+
+/* 1.0. 	Holding Page
+------------------------------------*/
+
+main {
+	text-align:          center;
+	// background-image:    url('../img/img.jpg');
+	background-repeat:   no-repeat;
+	background-position: center;
+	background-size:     cover;
+	height:              100%;
+	width:               100%;
+	display:             table;
+
+	section {
+		display:        table-cell;
+		vertical-align: middle;
+		padding:        0 2.5%;
+
+		p {
+			font-size:      25px;
+			margin:         0 0 5px;
+			color:          #2e3337;
+			font-weight:    300;
+			letter-spacing: -0.025em;
+		}
+
+		h2 {
+			font-size:      14px;
+			margin:         0 0 30px;
+			color:          #999999;
+			font-weight:    300;
+			letter-spacing: -0.025em;
+		}
+
+		h1 {
+			font-size:      16px;
+			padding:        0;
+			margin:         0 0 10px;
+			color:          #999999;
+			font-weight:    300;
+			letter-spacing: -0.025em;
+		}
+
+		ul {
+			margin:  0;
+			padding: 0;
+
+			li {
+				list-style: none;
+				padding:    0 5px;
+				.inline-block();
+
+				a {
+					padding: 5px;
+					color:   #666666;
+					.inline-block();
+
+					&:hover {
+						color: #2facee;
+					}
+				}
+			}
+		}
+	}
+}
